@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PackageLanguagePackManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011">
+  <Metadata>
+    <DisplayName>Edit Project</DisplayName>
+    <Description>一个开源的 Visual Studio 拓展，在项目右键菜单中加入“编辑项目文件”的功能。</Description>
+  </Metadata>
+</PackageLanguagePackManifest>
