@@ -1,6 +1,6 @@
 ## About
 
-[![Build Status](https://ci.appveyor.com/api/projects/status/32r7s2skrgm9ubva?svg=true)](https://ci.appveyor.com/project/heku/kool-editproject/branch/master)
+[![Build status](https://ci.appveyor.com/api/projects/status/luf891iask6ci15n/branch/master?svg=true)](https://ci.appveyor.com/project/heku/kool-editproject/branch/master)
 
 Edit Project is an open sourced Visual Studio extension to add a context menu for editing project file.
 
