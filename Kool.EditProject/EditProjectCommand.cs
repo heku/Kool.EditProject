@@ -87,9 +87,9 @@ namespace Kool.EditProject
 
         private void OpenDocument(string file) => VsShellUtilities.OpenDocument(_package, file);
 
-        private void ActiveDocument(string selectedFile)
+        private void ActiveDocument(string file)
         {
-            var editingFile = EditingFileMap.Single(x => x.Value == selectedFile).Key;
+            var editingFile = EditingFileMap.Single(x => x.Value == file).Key;
 
             foreach (Document document in _package.DTE.Documents)
             {
@@ -122,15 +122,13 @@ namespace Kool.EditProject
         {
             var closingFile = document.FullName;
 
-            if (EditingFileMap.ContainsKey(closingFile))
+            if (EditingFileMap.Remove(closingFile))
             {
-                EditingFileMap.Remove(closingFile);
+                if (EditingFileMap.Count == 0)
+                {
+                    RemoveListeners();
+                }
                 Directory.Delete(Path.GetDirectoryName(closingFile), true);
-            }
-
-            if (EditingFileMap.Count == 0)
-            {
-                RemoveListeners();
             }
         }
 
