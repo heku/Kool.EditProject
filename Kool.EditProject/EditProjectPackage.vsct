@@ -23,7 +23,7 @@
         <CommandFlag>IconAndText</CommandFlag>
         <CommandFlag>IconIsMoniker</CommandFlag>
         <Strings>
-          <ButtonText>Edit Project File</ButtonText>
+          <ButtonText>Edit...</ButtonText>
         </Strings>
       </Button>
     </Buttons>
