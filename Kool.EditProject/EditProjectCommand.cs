@@ -40,8 +40,9 @@ namespace Kool.EditProject
             var command = sender as OleMenuCommand;
             var project = _package.DTE.SelectedItems.Item(1).Project;
 
-            switch (project.Kind)
+            switch (project?.Kind)
             {
+                case null:  // When solution closed, user clicks 'Project' menu.
                 case CS_CORE_PROJECT_KIND:
                 case FS_CORE_PROJECT_KIND:
                 case VB_CORE_PROJECT_KIND:

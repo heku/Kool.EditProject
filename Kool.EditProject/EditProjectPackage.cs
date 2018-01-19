@@ -3,6 +3,7 @@ using Microsoft.VisualStudio.Shell;
 using System;
 using System.ComponentModel.Design;
 using System.Runtime.InteropServices;
+using UIContextGuids = Microsoft.VisualStudio.Shell.Interop.UIContextGuids;
 
 namespace Kool.EditProject
 {
@@ -10,7 +11,12 @@ namespace Kool.EditProject
     [PackageRegistration(UseManagedResourcesOnly = true)]
     [InstalledProductRegistration("#110", "#112", Vsix.VERSION, IconResourceID = 400)]
     [ProvideMenuResource("Menus.ctmenu", 1)]
-    [ProvideAutoLoad(Microsoft.VisualStudio.VSConstants.UICONTEXT.ShellInitialized_string)]
+    [ProvideAutoLoad(Ids.AUTO_LOAD_CONTEXT)]
+    [ProvideUIContextRule(Ids.AUTO_LOAD_CONTEXT,
+        "HasProject",
+        "SingleProject | MultipleProjects",
+        new[] { "SingleProject", "MultipleProjects" },
+        new[] { UIContextGuids.SolutionHasSingleProject, UIContextGuids.SolutionHasMultipleProjects })]
     public sealed class EditProjectPackage : Package
     {
         internal DTE2 DTE { get; private set; }
