@@ -19,6 +19,8 @@ namespace Kool.EditProject.Commands
         private const string FS_CORE_PROJECT_KIND = "{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}";
         private const string VB_CORE_PROJECT_KIND = "{778DAE3C-4631-46EA-AA77-85C1314464D9}";
 
+        private string _projectFile;
+
         private EditProjectCommand(EditProjectPackage package)
             : base(package, Ids.CMD_SET, Ids.EDIT_PROJECT_MENU_COMMAND_ID)
         {
@@ -26,9 +28,10 @@ namespace Kool.EditProject.Commands
 
         protected override void OnBeforeQueryStatus()
         {
-            if (SelectedProjects.Count() == 1)
+            var projects = SelectedProjects.ToArray();
+            if (projects.Length == 1)
             {
-                var project = SelectedProjects.Single();
+                var project = projects[0];
                 switch (project.Kind)
                 {
                     case CS_CORE_PROJECT_KIND:
@@ -38,25 +41,28 @@ namespace Kool.EditProject.Commands
                         break;
 
                     default:
-                        var projectName = Path.GetFileName(project.FullName);
+                        _projectFile = project.FullName;
+                        var fileName = Path.GetFileName(_projectFile);
                         Visible = true;
-                        Text = string.Format(Resources.EditMenuPattern, projectName);
+                        Text = string.Format(Resources.EditMenuPattern, fileName);
                         break;
                 }
+            }
+            else
+            {
+                Visible = false;
             }
         }
 
         protected override void OnExecute()
         {
-            var projectFile = SelectedProjects.Single().FullName;
-
-            if (IsEditing(projectFile))
+            if (IsEditing(_projectFile))
             {
-                ActiveDocument(projectFile);
+                ActiveDocument(_projectFile);
             }
             else
             {
-                OpenDocument(projectFile);
+                OpenDocument(_projectFile);
             }
         }
     }
