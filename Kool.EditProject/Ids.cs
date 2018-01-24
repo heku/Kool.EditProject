@@ -7,5 +7,6 @@
         public const string AUTO_LOAD_CONTEXT = "1B44FA30-D435-4754-B4A2-0A0E2906398C";
 
         public const int EDIT_PROJECT_MENU_COMMAND_ID = 0x0100;
+        public const int EDIT_PROJECTS_MENU_COMMAND_ID = 0x0110;
     }
 }

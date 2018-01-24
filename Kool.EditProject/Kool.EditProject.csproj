@@ -48,7 +48,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="EditProjectCommand.cs" />
+    <Compile Include="Commands\BaseCommand.cs" />
+    <Compile Include="Commands\EditProjectCommand.cs" />
+    <Compile Include="Commands\EditProjectsCommand.cs" />
     <Compile Include="EditProjectPackage.cs" />
     <Compile Include="Ids.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -8,7 +8,21 @@
   <Include href="KnownImageIds.vsct" />
 
   <Commands package="guidPackage">
+    <Groups>
+      <Group guid="guidCmdSet" id="EDIT_PROJECTS_GROUP_ID" priority="0x0180">
+        <Parent guid="guidSHLMainMenu" id="IDM_VS_CTXT_XPROJ_MULTIPROJ" />
+      </Group>
+    </Groups>
     <Buttons>
+      <Button guid="guidCmdSet" id="EDIT_PROJECTS_CMD_ID" priority="0x0100" type="Button">
+        <Parent guid="guidCmdSet" id="EDIT_PROJECTS_GROUP_ID" />
+        <Icon guid="ImageCatalogGuid" id="Open" />
+        <CommandFlag>IconAndText</CommandFlag>
+        <CommandFlag>IconIsMoniker</CommandFlag>
+        <Strings>
+          <ButtonText>Edit Selected Projects</ButtonText>
+        </Strings>
+      </Button>
       <Button guid="guidCmdSet" id="EDIT_PROJECT_CMD_ID" priority="0x0100" type="Button">
         <Parent guid="guidSHLMainMenu" id="IDG_VS_CTXT_PROJECT_EDITFILE" />
         <Icon guid="ImageCatalogGuid" id="Open" />
@@ -31,6 +45,8 @@
     <!-- This is the guid used to group the menu commands together -->
     <GuidSymbol name="guidCmdSet" value="{6c7e3ed8-7da3-456d-802f-e11c4f8f8438}">
       <IDSymbol name="EDIT_PROJECT_CMD_ID" value="0x0100" />
+      <IDSymbol name="EDIT_PROJECTS_CMD_ID" value="0x0110" />
+      <IDSymbol name="EDIT_PROJECTS_GROUP_ID" value="0x1000" />
     </GuidSymbol>
   </Symbols>
 </CommandTable>

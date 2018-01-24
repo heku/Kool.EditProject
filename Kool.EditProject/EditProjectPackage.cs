@@ -1,4 +1,5 @@
 ﻿using EnvDTE80;
+using Kool.EditProject.Commands;
 using Microsoft.VisualStudio.Shell;
 using System;
 using System.ComponentModel.Design;
@@ -16,7 +17,8 @@ namespace Kool.EditProject
         "HasProject",
         "SingleProject | MultipleProjects",
         new[] { "SingleProject", "MultipleProjects" },
-        new[] { UIContextGuids.SolutionHasSingleProject, UIContextGuids.SolutionHasMultipleProjects })]
+        new[] { UIContextGuids.SolutionHasSingleProject, UIContextGuids.SolutionHasMultipleProjects },
+        delay: 1000)]
     public sealed class EditProjectPackage : Package
     {
         internal DTE2 DTE { get; private set; }
@@ -31,6 +33,7 @@ namespace Kool.EditProject
             CommandService = GetService(typeof(IMenuCommandService)) as OleMenuCommandService;
 
             EditProjectCommand.Initialize(this);
+            EditProjectsCommand.Initialize(this);
         }
     }
 }
