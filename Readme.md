@@ -9,7 +9,7 @@ Edit Project is an open sourced Visual Studio extension to add the context menu 
 You can download it via Visual Studio 2015/2017 'Extensions and Updates' or from the [marketplace](https://marketplace.visualstudio.com/items?itemName=iheku.EditProject).
 
 
-## Feature
+## Features
 - Add **Edit Project File** menu for non .NETCore projects.
  
     ![Edit Single Project Screenshot](Screenshots/SingleProject.png)
