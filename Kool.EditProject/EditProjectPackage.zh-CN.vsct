@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CommandTable xmlns="http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <Extern href="stdidcmd.h" />
+  <Extern href="vsshlids.h" />
+
+  <!--https://docs.microsoft.com/en-us/visualstudio/extensibility/image-service-and-catalog#how-do-i-use-image-monikers-in-a-vsct-file-->
+  <Include href="KnownImageIds.vsct" />
+
+  <Commands package="guidPackage">
+    <Groups>
+      <Group guid="guidCmdSet" id="EDIT_PROJECT_GROUP_ID" priority="0x0180">
+        <Parent guid="guidSHLMainMenu" id="IDM_VS_CTXT_PROJNODE" />
+      </Group>
+      <Group guid="guidCmdSet" id="EDIT_PROJECTS_GROUP_ID" priority="0x0180">
+        <Parent guid="guidSHLMainMenu" id="IDM_VS_CTXT_XPROJ_MULTIPROJ" />
+      </Group>
+    </Groups>
+
+    <Buttons>
+      <Button guid="guidCmdSet" id="EDIT_PROJECT_CMD_ID" priority="0x0100" type="Button">
+        <!--Visual Studio 2015 doesn't have such menu, we have to define a new Group-->
+        <!--<Parent guid="guidSHLMainMenu" id="IDG_VS_CTXT_PROJECT_EDITFILE" />-->
+        <Parent guid="guidCmdSet" id="EDIT_PROJECT_GROUP_ID" />
+        <Icon guid="ImageCatalogGuid" id="Open" />
+        <CommandFlag>DynamicVisibility</CommandFlag>
+        <CommandFlag>DefaultInvisible</CommandFlag>
+        <CommandFlag>TextChanges</CommandFlag>
+        <CommandFlag>IconAndText</CommandFlag>
+        <CommandFlag>IconIsMoniker</CommandFlag>
+        <Strings>
+          <ButtonText>编辑...</ButtonText>
+        </Strings>
+      </Button>
+      <Button guid="guidCmdSet" id="EDIT_PROJECTS_CMD_ID" priority="0x0100" type="Button">
+        <Parent guid="guidCmdSet" id="EDIT_PROJECTS_GROUP_ID" />
+        <Icon guid="ImageCatalogGuid" id="Open" />
+        <CommandFlag>IconAndText</CommandFlag>
+        <CommandFlag>IconIsMoniker</CommandFlag>
+        <Strings>
+          <ButtonText>编辑项目文件</ButtonText>
+        </Strings>
+      </Button>
+    </Buttons>
+  </Commands>
+
+  <Symbols>
+    <!-- This is the package guid. -->
+    <GuidSymbol name="guidPackage" value="{08a2610d-b354-402c-99a8-9c2113e89ad8}" />
+
+    <!-- This is the guid used to group the menu commands together -->
+    <GuidSymbol name="guidCmdSet" value="{6c7e3ed8-7da3-456d-802f-e11c4f8f8438}">
+      <IDSymbol name="EDIT_PROJECT_CMD_ID" value="0x0100" />
+      <IDSymbol name="EDIT_PROJECTS_CMD_ID" value="0x0110" />
+      <IDSymbol name="EDIT_PROJECT_GROUP_ID" value="0x1000" />
+      <IDSymbol name="EDIT_PROJECTS_GROUP_ID" value="0x1100" />
+    </GuidSymbol>
+  </Symbols>
+</CommandTable>
