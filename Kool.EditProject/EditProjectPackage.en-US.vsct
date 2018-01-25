@@ -9,10 +9,10 @@
 
   <Commands package="guidPackage">
     <Groups>
-      <Group guid="guidCmdSet" id="EDIT_PROJECT_GROUP_ID" priority="0x0180">
+      <Group guid="guidCmdSet" id="EDIT_PROJECT_GROUP_ID" priority="0x017F">
         <Parent guid="guidSHLMainMenu" id="IDM_VS_CTXT_PROJNODE" />
       </Group>
-      <Group guid="guidCmdSet" id="EDIT_PROJECTS_GROUP_ID" priority="0x0180">
+      <Group guid="guidCmdSet" id="EDIT_PROJECTS_GROUP_ID" priority="0x017F">
         <Parent guid="guidSHLMainMenu" id="IDM_VS_CTXT_XPROJ_MULTIPROJ" />
       </Group>
     </Groups>
