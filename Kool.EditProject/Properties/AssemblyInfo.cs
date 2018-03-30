@@ -33,4 +33,4 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyVersion(Vsix.VERSION)]
 
 // https://docs.microsoft.com/en-us/visualstudio/extensibility/localizing-menu-commands
-[assembly: NeutralResourcesLanguage("en-US", UltimateResourceFallbackLocation.Satellite)]
+[assembly: NeutralResourcesLanguage("en", UltimateResourceFallbackLocation.Satellite)]

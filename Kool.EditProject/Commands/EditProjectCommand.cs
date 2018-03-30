@@ -44,7 +44,7 @@ namespace Kool.EditProject.Commands
                         _projectFile = project.FullName;
                         var fileName = Path.GetFileName(_projectFile);
                         Visible = true;
-                        Text = string.Format(Resources.EditMenuPattern, fileName);
+                        Text = string.Format(VSPackage.EditMenuPattern, fileName);
                         break;
                 }
             }
