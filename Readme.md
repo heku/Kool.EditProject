@@ -14,8 +14,8 @@ You can download it via Visual Studio 2015/2017 'Extensions and Updates' or from
  
     ![Edit Single Project Screenshot](Screenshots/SingleProject.png)
 - Add **Edit Selected Projects** menu for multiple selected projects.
-	
-	![Edit Multiple Projects Screenshot](Screenshots/MultipleProjects.png)
+    
+    ![Edit Multiple Projects Screenshot](Screenshots/MultipleProjects.png)
 
 
 ## A known 'issue'
