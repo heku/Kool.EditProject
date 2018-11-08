@@ -53,6 +53,7 @@
     <Compile Include="Commands\EditProjectsCommand.cs" />
     <Compile Include="EditProjectPackage.cs" />
     <Compile Include="Ids.cs" />
+    <Compile Include="Models\ProjectHelper.cs" />
     <Compile Include="Models\ProjectKinds.cs" />
     <Compile Include="Models\TempFileHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -1,5 +1,7 @@
 ﻿namespace Kool.EditProject.Models
 {
+    // Looks like this is out to date since 15.8, refer to https://developercommunity.visualstudio.com/content/problem/312523/envdteprojectkind-no-longer-differentiates-between.html
+
     // https://stackoverflow.com/questions/45795759/detect-a-dotnet-core-project-from-envdte-project-api
     // https://www.codeproject.com/reference/720512/list-of-visual-studio-project-type-guids
     internal static class ProjectKinds

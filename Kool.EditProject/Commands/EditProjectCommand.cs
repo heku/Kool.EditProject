@@ -1,6 +1,6 @@
-﻿using System.IO;
+﻿using Kool.EditProject.Models;
+using System.IO;
 using System.Linq;
-using static Kool.EditProject.Models.ProjectKinds;
 
 namespace Kool.EditProject.Commands
 {
@@ -27,19 +27,15 @@ namespace Kool.EditProject.Commands
             if (projects.Length == 1)
             {
                 var project = projects[0];
-                switch (project.Kind)
+                if (ProjectHelper.IsDotNetCoreProject(project))
                 {
-                    case CS_CORE_PROJECT_KIND:
-                    case FS_CORE_PROJECT_KIND:
-                    case VB_CORE_PROJECT_KIND:
-                        Visible = false;
-                        break;
-
-                    default:
-                        _projectFile = project.FullName;
-                        Text = string.Format(VSPackage.EditMenuPattern, Path.GetFileName(_projectFile));
-                        Visible = true;
-                        break;
+                    Visible = false;
+                }
+                else
+                {
+                    _projectFile = project.FullName;
+                    Text = string.Format(VSPackage.EditMenuPattern, Path.GetFileName(_projectFile));
+                    Visible = true;
                 }
             }
             else
