@@ -36,6 +36,7 @@ namespace Kool.EditProject
 
             EditProjectCommand.Initialize(this);
             EditProjectsCommand.Initialize(this);
+            EditSolutionCommand.Initialize(this);
         }
     }
 

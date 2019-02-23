@@ -15,6 +15,9 @@
       <Group guid="guidCmdSet" id="EDIT_PROJECTS_GROUP_ID" priority="0x017F">
         <Parent guid="guidSHLMainMenu" id="IDM_VS_CTXT_XPROJ_MULTIPROJ" />
       </Group>
+      <Group guid="guidCmdSet" id="EDIT_SOLUTION_GROUP_ID" priority="0x017F">
+        <Parent guid="guidSHLMainMenu" id="IDM_VS_CTXT_SOLNNODE" />
+      </Group>
     </Groups>
   </Commands>
 
@@ -26,8 +29,11 @@
     <GuidSymbol name="guidCmdSet" value="{6c7e3ed8-7da3-456d-802f-e11c4f8f8438}">
       <IDSymbol name="EDIT_PROJECT_CMD_ID" value="0x0100" />
       <IDSymbol name="EDIT_PROJECTS_CMD_ID" value="0x0110" />
+      <IDSymbol name="EDIT_SOLUTION_CMD_ID" value="0x0120" />
+      
       <IDSymbol name="EDIT_PROJECT_GROUP_ID" value="0x1000" />
       <IDSymbol name="EDIT_PROJECTS_GROUP_ID" value="0x1100" />
+      <IDSymbol name="EDIT_SOLUTION_GROUP_ID" value="0x1200" />
     </GuidSymbol>
   </Symbols>
 </CommandTable>

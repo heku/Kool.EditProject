@@ -16,7 +16,7 @@
         <CommandFlag>IconAndText</CommandFlag>
         <CommandFlag>IconIsMoniker</CommandFlag>
         <Strings>
-          <ButtonText>Edit...</ButtonText>
+          <ButtonText>Edit (Project...)</ButtonText>
         </Strings>
       </Button>
       <Button guid="guidCmdSet" id="EDIT_PROJECTS_CMD_ID" priority="0x0100" type="Button">
@@ -26,6 +26,16 @@
         <CommandFlag>IconIsMoniker</CommandFlag>
         <Strings>
           <ButtonText>Edit Selected Projects</ButtonText>
+        </Strings>
+      </Button>
+      <Button guid="guidCmdSet" id="EDIT_SOLUTION_CMD_ID" priority="0x0100" type="Button">
+        <Parent guid="guidCmdSet" id="EDIT_SOLUTION_GROUP_ID" />
+        <Icon guid="ImageCatalogGuid" id="Open" />
+        <CommandFlag>TextChanges</CommandFlag>
+        <CommandFlag>IconAndText</CommandFlag>
+        <CommandFlag>IconIsMoniker</CommandFlag>
+        <Strings>
+          <ButtonText>Edit (Solution...)</ButtonText>
         </Strings>
       </Button>
     </Buttons>

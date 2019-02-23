@@ -8,5 +8,6 @@
 
         public const int EDIT_PROJECT_MENU_COMMAND_ID = 0x0100;
         public const int EDIT_PROJECTS_MENU_COMMAND_ID = 0x0110;
+        public const int EDIT_SOLUTION_MENU_COMMAND_ID = 0x0120;
     }
 }
