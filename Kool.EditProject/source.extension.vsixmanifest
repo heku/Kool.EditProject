@@ -3,7 +3,7 @@
     <Metadata>
         <Identity Id="Kool.EditProject.51be3f7e-0e8b-4ad4-b2c9-126445f2ce6a" Version="1.4" Language="en-US" Publisher="Heku" />
         <DisplayName>Edit Project</DisplayName>
-        <Description xml:space="preserve">An open sourced Visual Studio extension to add a project context menu for editing project file.</Description>
+        <Description xml:space="preserve">An open source Visual Studio extension to add the context menu for editing project/solution file.</Description>
         <MoreInfo>https://github.com/heku/kool.editproject</MoreInfo>
         <Icon>Resources\Logo.ico</Icon>
         <Tags>heku;kool;edit;project;proj;csproj</Tags>
