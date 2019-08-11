@@ -1,8 +1,8 @@
 ## About
 
-master|rel
-------|---
-[![Build status](https://ci.appveyor.com/api/projects/status/luf891iask6ci15n/branch/master?svg=true)](https://ci.appveyor.com/project/heku/kool-editproject/branch/master)|[![Build status](https://ci.appveyor.com/api/projects/status/luf891iask6ci15n/branch/rel?svg=true)](https://ci.appveyor.com/project/heku/kool-editproject/branch/rel)
+ master (development)                                         | rel (release)                                                
+ ------------------------------------------------------------ | ------------------------------------------------------------ 
+ [![Build status](https://ci.appveyor.com/api/projects/status/luf891iask6ci15n/branch/master?svg=true)](https://ci.appveyor.com/project/heku/kool-editproject/branch/master) | [![Build status](https://ci.appveyor.com/api/projects/status/luf891iask6ci15n/branch/rel?svg=true)](https://ci.appveyor.com/project/heku/kool-editproject/branch/rel) 
 
 An open source Visual Studio extension to add the context menu for editing project/solution file.
 
