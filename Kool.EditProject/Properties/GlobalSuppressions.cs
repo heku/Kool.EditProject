@@ -1,0 +1,16 @@
+﻿// This file is used by Code Analysis to maintain SuppressMessage
+// attributes that are applied to this project.
+// Project-level suppressions either have no target or are given
+// a specific target and scoped to a namespace, type, member, etc.
+
+[assembly: System.Diagnostics.CodeAnalysis.SuppressMessage("Usage", "VSTHRD010:Invoke single-threaded types on Main thread", Justification = "<Pending>", Scope = "member", Target = "~M:Kool.EditProject.Commands.BaseCommand.DocumentEvents_DocumentSaved(EnvDTE.Document)")]
+[assembly: System.Diagnostics.CodeAnalysis.SuppressMessage("Usage", "VSTHRD010:Invoke single-threaded types on Main thread", Justification = "<Pending>", Scope = "member", Target = "~M:Kool.EditProject.Commands.BaseCommand.ActiveDocument(System.String)")]
+[assembly: System.Diagnostics.CodeAnalysis.SuppressMessage("Usage", "VSTHRD010:Invoke single-threaded types on Main thread", Justification = "<Pending>", Scope = "member", Target = "~M:Kool.EditProject.Commands.BaseCommand.DocumentEvents_DocumentClosing(EnvDTE.Document)")]
+[assembly: System.Diagnostics.CodeAnalysis.SuppressMessage("Usage", "VSTHRD010:Invoke single-threaded types on Main thread", Justification = "<Pending>", Scope = "member", Target = "~M:Kool.EditProject.Commands.BaseCommand.FindDocument(System.String)~EnvDTE.Document")]
+[assembly: System.Diagnostics.CodeAnalysis.SuppressMessage("Usage", "VSTHRD010:Invoke single-threaded types on Main thread", Justification = "<Pending>", Scope = "member", Target = "~M:Kool.EditProject.Commands.BaseCommand.OnProjectFileChanged(System.Object,System.IO.FileSystemEventArgs)")]
+[assembly: System.Diagnostics.CodeAnalysis.SuppressMessage("Usage", "VSTHRD010:Invoke single-threaded types on Main thread", Justification = "<Pending>", Scope = "member", Target = "~M:Kool.EditProject.Commands.BaseCommand.RegisterListeners")]
+[assembly: System.Diagnostics.CodeAnalysis.SuppressMessage("Usage", "VSTHRD010:Invoke single-threaded types on Main thread", Justification = "<Pending>", Scope = "member", Target = "~P:Kool.EditProject.Commands.BaseCommand.SelectedProjects")]
+[assembly: System.Diagnostics.CodeAnalysis.SuppressMessage("Usage", "VSTHRD010:Invoke single-threaded types on Main thread", Justification = "<Pending>", Scope = "member", Target = "~M:Kool.EditProject.Commands.EditProjectCommand.OnBeforeQueryStatus")]
+[assembly: System.Diagnostics.CodeAnalysis.SuppressMessage("Usage", "VSTHRD010:Invoke single-threaded types on Main thread", Justification = "<Pending>", Scope = "member", Target = "~M:Kool.EditProject.Commands.EditProjectsCommand.OnExecute")]
+[assembly: System.Diagnostics.CodeAnalysis.SuppressMessage("Build", "VSTHRD010:Accessing \"_Solution\" should only be done on the main thread. Call Microsoft.VisualStudio.Shell.ThreadHelper.ThrowIfNotOnUIThread() first.", Justification = "<Pending>", Scope = "member", Target = "~M:Kool.EditProject.Commands.EditSolutionCommand.OnBeforeQueryStatus")]
+[assembly: System.Diagnostics.CodeAnalysis.SuppressMessage("Build", "VSTHRD010:Accessing \"Project\" should only be done on the main thread. Call Microsoft.VisualStudio.Shell.ThreadHelper.ThrowIfNotOnUIThread() first.", Justification = "<Pending>", Scope = "member", Target = "~M:Kool.EditProject.Models.ProjectHelper.IsDotNetCoreProject(EnvDTE.Project)~System.Boolean")]

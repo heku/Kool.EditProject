@@ -65,7 +65,10 @@ namespace Kool.EditProject.Commands
         {
             var projectFile = e.FullPath;
             var document = FindDocument(projectFile);
-            if (document == null) return;
+            if (document == null)
+            {
+                return;
+            }
             var editingFile = document.FullName;
             var watcher = EditingFileMap[editingFile];
 
