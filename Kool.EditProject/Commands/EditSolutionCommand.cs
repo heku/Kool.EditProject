@@ -1,6 +1,4 @@
-﻿using System.IO;
-
-namespace Kool.EditProject.Commands
+﻿namespace Kool.EditProject.Commands
 {
     internal sealed class EditSolutionCommand : BaseCommand
     {
@@ -22,7 +20,6 @@ namespace Kool.EditProject.Commands
         protected override void OnBeforeQueryStatus()
         {
             _solutionFile = Package.DTE.Solution.FullName;
-            Text = string.Format(VSPackage.EditMenuPattern, Path.GetFileName(_solutionFile));
         }
 
         protected override void OnExecute()

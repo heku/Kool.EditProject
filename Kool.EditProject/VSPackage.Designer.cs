@@ -19,6 +19,5 @@ namespace Kool.EditProject
 
         public static string _110 { get; } = Resx.GetString("110");
         public static string _112 { get; } = Resx.GetString("112");
-        public static string EditMenuPattern { get; } = Resx.GetString("EditMenuPattern");
     }
 }

@@ -17,7 +17,7 @@
 
         protected override void OnExecute()
         {
-            bool opened = false;
+            var opened = false;
             string projectFile = null;
 
             foreach (var project in SelectedProjects)

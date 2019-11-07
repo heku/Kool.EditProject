@@ -12,11 +12,10 @@
         <Icon guid="ImageCatalogGuid" id="Open" />
         <CommandFlag>DynamicVisibility</CommandFlag>
         <CommandFlag>DefaultInvisible</CommandFlag>
-        <CommandFlag>TextChanges</CommandFlag>
         <CommandFlag>IconAndText</CommandFlag>
         <CommandFlag>IconIsMoniker</CommandFlag>
         <Strings>
-          <ButtonText>编辑 (项目...)</ButtonText>
+          <ButtonText>编辑项目文件</ButtonText>
         </Strings>
       </Button>
       <Button guid="guidCmdSet" id="EDIT_PROJECTS_CMD_ID" priority="0x0100" type="Button">
@@ -25,17 +24,16 @@
         <CommandFlag>IconAndText</CommandFlag>
         <CommandFlag>IconIsMoniker</CommandFlag>
         <Strings>
-          <ButtonText>编辑项目文件</ButtonText>
+          <ButtonText>编辑多个项目文件</ButtonText>
         </Strings>
       </Button>
       <Button guid="guidCmdSet" id="EDIT_SOLUTION_CMD_ID" priority="0x0100" type="Button">
         <Parent guid="guidCmdSet" id="EDIT_SOLUTION_GROUP_ID" />
         <Icon guid="ImageCatalogGuid" id="Open" />
-        <CommandFlag>TextChanges</CommandFlag>
         <CommandFlag>IconAndText</CommandFlag>
         <CommandFlag>IconIsMoniker</CommandFlag>
         <Strings>
-          <ButtonText>编辑 (解决方案...)</ButtonText>
+          <ButtonText>编辑解决方案文件</ButtonText>
         </Strings>
       </Button>
     </Buttons>

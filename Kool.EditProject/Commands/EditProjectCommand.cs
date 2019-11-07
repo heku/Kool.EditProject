@@ -1,5 +1,4 @@
 ﻿using Kool.EditProject.Models;
-using System.IO;
 using System.Linq;
 
 namespace Kool.EditProject.Commands
@@ -34,7 +33,6 @@ namespace Kool.EditProject.Commands
                 else
                 {
                     _projectFile = project.FullName;
-                    Text = string.Format(VSPackage.EditMenuPattern, Path.GetFileName(_projectFile));
                     Visible = true;
                 }
             }
