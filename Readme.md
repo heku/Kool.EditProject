@@ -1,6 +1,6 @@
 [![master branch](https://img.shields.io/azure-devops/build/heku/18bbd6e7-59f0-4bc9-a26a-1c9049793678/12/master?label=master)](https://dev.azure.com/heku/Kool.EditProject/_build/latest?definitionId=12&branchName=master)
 [![rel branch](https://img.shields.io/azure-devops/build/heku/18bbd6e7-59f0-4bc9-a26a-1c9049793678/12/rel?label=rel)](https://dev.azure.com/heku/Kool.EditProject/_build/latest?definitionId=12&branchName=rel)
-[![deployment](https://vsrm.dev.azure.com/heku/_apis/public/Release/badge/18bbd6e7-59f0-4bc9-a26a-1c9049793678/1/2)](https://dev.azure.com/heku/Kool.EditProject/_dashboards)
+[![deployment](https://vsrm.dev.azure.com/heku/_apis/public/Release/badge/18bbd6e7-59f0-4bc9-a26a-1c9049793678/1/2)](https://dev.azure.com/heku/Kool.EditProject/_dashboards/dashboard/b9294e57-7c09-45ee-9318-c4498b99c1c7)
 [![marketplace](https://img.shields.io/visual-studio-marketplace/v/heku.editproject.svg?label=Marketplace)](https://marketplace.visualstudio.com/items?itemName=heku.EditProject)
 [![downloads](https://img.shields.io/visual-studio-marketplace/d/heku.editproject.svg?label=Downloads)](https://marketplace.visualstudio.com/items?itemName=heku.EditProject)
 
