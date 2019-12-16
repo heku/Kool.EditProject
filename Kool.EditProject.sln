@@ -1,15 +1,18 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27130.2020
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29519.181
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kool.EditProject", "Kool.EditProject\Kool.EditProject.csproj", "{52FBE367-4D6B-445D-A042-F4B2553F471F}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{81143BF0-C559-4B59-860F-130543C2C504}"
 	ProjectSection(SolutionItems) = preProject
 		.editorconfig = .editorconfig
-		appveyor.yml = appveyor.yml
+		azure-pipelines.yml = azure-pipelines.yml
+		publish.manifest.json = publish.manifest.json
+		publish.overview.md = publish.overview.md
 		Readme.md = Readme.md
+		vsix.psm1 = vsix.psm1
 	EndProjectSection
 EndProject
 Global

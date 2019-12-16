@@ -1,8 +1,10 @@
-## About
+[![master branch](https://img.shields.io/azure-devops/build/heku/18bbd6e7-59f0-4bc9-a26a-1c9049793678/12/master?label=master)](https://dev.azure.com/heku/Kool.EditProject/_build/latest?definitionId=12&branchName=master)
+[![rel branch](https://img.shields.io/azure-devops/build/heku/18bbd6e7-59f0-4bc9-a26a-1c9049793678/12/rel?label=rel)](https://dev.azure.com/heku/Kool.EditProject/_build/latest?definitionId=12&branchName=rel)
+[![deployment](https://vsrm.dev.azure.com/heku/_apis/public/Release/badge/18bbd6e7-59f0-4bc9-a26a-1c9049793678/1/2)](https://dev.azure.com/heku/Kool.EditProject/_dashboards)
+[![marketplace](https://img.shields.io/visual-studio-marketplace/v/heku.editproject.svg?label=Marketplace)](https://marketplace.visualstudio.com/items?itemName=heku.EditProject)
+[![downloads](https://img.shields.io/visual-studio-marketplace/d/heku.editproject.svg?label=Downloads)](https://marketplace.visualstudio.com/items?itemName=heku.EditProject)
 
- master (development)                                         | rel (release)                                                
- ------------------------------------------------------------ | ------------------------------------------------------------ 
- [![Build status](https://ci.appveyor.com/api/projects/status/luf891iask6ci15n/branch/master?svg=true)](https://ci.appveyor.com/project/heku/kool-editproject/branch/master) | [![Build status](https://ci.appveyor.com/api/projects/status/luf891iask6ci15n/branch/rel?svg=true)](https://ci.appveyor.com/project/heku/kool-editproject/branch/rel) 
+--------
 
 An open source Visual Studio extension to add the context menu for editing project/solution file.
 
