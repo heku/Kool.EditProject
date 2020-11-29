@@ -6,6 +6,7 @@
     <UseCodebase>true</UseCodebase>
     <SignAssembly>true</SignAssembly>
     <AssemblyOriginatorKeyFile>Key.snk</AssemblyOriginatorKeyFile>
+    <NoWarn>VSTHRD010</NoWarn>
   </PropertyGroup>
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -52,7 +53,6 @@
     <Compile Include="Commands\EditProjectsCommand.cs" />
     <Compile Include="Commands\EditSolutionCommand.cs" />
     <Compile Include="EditProjectPackage.cs" />
-    <Compile Include="Properties\GlobalSuppressions.cs" />
     <Compile Include="Ids.cs" />
     <Compile Include="Models\ProjectHelper.cs" />
     <Compile Include="Models\ProjectKinds.cs" />
