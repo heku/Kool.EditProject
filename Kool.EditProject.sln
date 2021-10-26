@@ -17,20 +17,37 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Kool.EditProject.Shared", "Kool.EditProject.Shared\Kool.EditProject.Shared.shproj", "{6DE6479D-EE05-43C9-A5F1-0BCC6B2998DF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kool.EditProject2022", "Kool.EditProject2022\Kool.EditProject2022.csproj", "{27D6D812-0DE7-486C-A283-8F7E0960C0F5}"
+EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		Kool.EditProject.Shared\Kool.EditProject.Shared.projitems*{27d6d812-0de7-486c-a283-8f7e0960c0f5}*SharedItemsImports = 4
 		Kool.EditProject.Shared\Kool.EditProject.Shared.projitems*{52fbe367-4d6b-445d-a042-f4b2553f471f}*SharedItemsImports = 4
 		Kool.EditProject.Shared\Kool.EditProject.Shared.projitems*{6de6479d-ee05-43c9-a5f1-0bcc6b2998df}*SharedItemsImports = 13
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
 		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{52FBE367-4D6B-445D-A042-F4B2553F471F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{52FBE367-4D6B-445D-A042-F4B2553F471F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52FBE367-4D6B-445D-A042-F4B2553F471F}.Debug|x86.ActiveCfg = Debug|x86
+		{52FBE367-4D6B-445D-A042-F4B2553F471F}.Debug|x86.Build.0 = Debug|x86
 		{52FBE367-4D6B-445D-A042-F4B2553F471F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{52FBE367-4D6B-445D-A042-F4B2553F471F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52FBE367-4D6B-445D-A042-F4B2553F471F}.Release|x86.ActiveCfg = Release|x86
+		{52FBE367-4D6B-445D-A042-F4B2553F471F}.Release|x86.Build.0 = Release|x86
+		{27D6D812-0DE7-486C-A283-8F7E0960C0F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27D6D812-0DE7-486C-A283-8F7E0960C0F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27D6D812-0DE7-486C-A283-8F7E0960C0F5}.Debug|x86.ActiveCfg = Debug|x86
+		{27D6D812-0DE7-486C-A283-8F7E0960C0F5}.Debug|x86.Build.0 = Debug|x86
+		{27D6D812-0DE7-486C-A283-8F7E0960C0F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27D6D812-0DE7-486C-A283-8F7E0960C0F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{27D6D812-0DE7-486C-A283-8F7E0960C0F5}.Release|x86.ActiveCfg = Release|x86
+		{27D6D812-0DE7-486C-A283-8F7E0960C0F5}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
