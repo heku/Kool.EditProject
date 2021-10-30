@@ -1,6 +1,7 @@
 trigger:
 - 'master'
-- 'rel'
+- 'rel-2019'
+- 'rel-2022'
 
 variables:
   patch: $[counter('versioncounter', 0)]
@@ -8,10 +9,10 @@ variables:
   buildPlatform: 'Any CPU'
   buildConfiguration: 'Release'
 
-name: 1.6.$(patch)
+name: 1.7.$(patch)
 
 pool:
-  vmImage: 'windows-2019'
+  vmImage: 'windows-2022'
 
 steps:
 - task: NuGetToolInstaller@1
