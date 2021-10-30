@@ -55,7 +55,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\Key.snk" Link="Key.snk" />
     <None Include="source.extension.vsixmanifest" />
     <None Include="..\Kool.EditProject.Linked\VSPackage.tt" Link="VSPackage.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
