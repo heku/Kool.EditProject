@@ -1,6 +1,7 @@
 ﻿using EnvDTE;
 using Microsoft.VisualStudio.Shell;
 using Microsoft.VisualStudio.Shell.Interop;
+using System;
 using static Kool.EditProject.Models.ProjectKinds;
 
 namespace Kool.EditProject.Models
@@ -17,6 +18,10 @@ namespace Kool.EditProject.Models
                     return true;
 
                 default:
+                    if (project.FullName.EndsWith(".shproj", StringComparison.InvariantCultureIgnoreCase))
+                    {
+                        return false;
+                    }
                     var solution = Package.GetGlobalService(typeof(SVsSolution)) as IVsSolution;
                     if (solution.GetProjectOfUniqueName(project.UniqueName, out var hierarchy) == 0)
                     {
