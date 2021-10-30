@@ -16,9 +16,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Kool.EditProject.Shared", "Kool.EditProject.Shared\Kool.EditProject.Shared.shproj", "{6DE6479D-EE05-43C9-A5F1-0BCC6B2998DF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kool.EditProject2019", "Kool.EditProject2019\Kool.EditProject2019.csproj", "{52FBE367-4D6B-445D-A042-F4B2553F471F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kool.EditProject.2019", "Kool.EditProject.2019\Kool.EditProject.2019.csproj", "{52FBE367-4D6B-445D-A042-F4B2553F471F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kool.EditProject2022", "Kool.EditProject2022\Kool.EditProject2022.csproj", "{27D6D812-0DE7-486C-A283-8F7E0960C0F5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kool.EditProject.2022", "Kool.EditProject.2022\Kool.EditProject.2022.csproj", "{27D6D812-0DE7-486C-A283-8F7E0960C0F5}"
 EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
