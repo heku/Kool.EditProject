@@ -18,6 +18,7 @@ namespace Kool.EditProject.Models
                     return true;
 
                 default:
+                    // Shared project is CPS capable but has no built-in Edit Project menu
                     if (project.FullName.EndsWith(".shproj", StringComparison.InvariantCultureIgnoreCase))
                     {
                         return false;

@@ -79,8 +79,12 @@
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
     <Reference Include="System" />
     <Reference Include="System.Design" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
     <VSCTCompile Include="..\Kool.EditProject.Linked\EditProjectPackage.en.vsct" Link="EditProjectPackage.en.vsct">
@@ -101,6 +105,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="..\Kool.EditProject.Linked\VSPackage.zh-Hans.resx" Link="VSPackage.zh-Hans.resx">
       <MergeWithCTO>true</MergeWithCTO>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

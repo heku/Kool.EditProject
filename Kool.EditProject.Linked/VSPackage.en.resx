@@ -127,4 +127,22 @@
   <data name="400" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\Logo.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="ErrorMessageTitle" xml:space="preserve">
+    <value>Error</value>
+  </data>
+  <data name="OptionsPage_Arguments" xml:space="preserve">
+    <value>Arguments ($FILE)</value>
+  </data>
+  <data name="OptionsPage_CustomEditor" xml:space="preserve">
+    <value>Custom editor</value>
+  </data>
+  <data name="OptionsPage_OpenProjitems" xml:space="preserve">
+    <value>Open .projitems file when editing shared project.</value>
+  </data>
+  <data name="OptionsPage_TestButtonContent" xml:space="preserve">
+    <value>Test</value>
+  </data>
+  <data name="OptionsPage_UseCustomEditor" xml:space="preserve">
+    <value>Use custom editor</value>
+  </data>
 </root>

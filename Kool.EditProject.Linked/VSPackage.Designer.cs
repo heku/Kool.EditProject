@@ -19,5 +19,11 @@ namespace Kool.EditProject
 
         public static string _110 { get; } = Resx.GetString("110");
         public static string _112 { get; } = Resx.GetString("112");
+        public static string ErrorMessageTitle { get; } = Resx.GetString("ErrorMessageTitle");
+        public static string OptionsPage_Arguments { get; } = Resx.GetString("OptionsPage_Arguments");
+        public static string OptionsPage_CustomEditor { get; } = Resx.GetString("OptionsPage_CustomEditor");
+        public static string OptionsPage_OpenProjitems { get; } = Resx.GetString("OptionsPage_OpenProjitems");
+        public static string OptionsPage_TestButtonContent { get; } = Resx.GetString("OptionsPage_TestButtonContent");
+        public static string OptionsPage_UseCustomEditor { get; } = Resx.GetString("OptionsPage_UseCustomEditor");
     }
 }

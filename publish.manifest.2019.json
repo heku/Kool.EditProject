@@ -1,36 +1,40 @@
 {
-    "$schema": "http://json.schemastore.org/vsix-publish",
-    "categories": [
-        "Coding",
-        "Other"
-    ],
-    "identity": {
-        "internalName": "EditProject",
-        "displayName": "Edit Project",
-        "tags": [
-            "edit",
-            "project",
-            "csproj"
-        ]
+  "$schema": "http://json.schemastore.org/vsix-publish",
+  "categories": [
+    "Coding",
+    "Other"
+  ],
+  "identity": {
+    "internalName": "EditProject",
+    "displayName": "Edit Project",
+    "tags": [
+      "edit",
+      "project",
+      "csproj"
+    ]
+  },
+  "overview": "publish.overview.md",
+  "assetFiles": [
+    {
+      "pathOnDisk": "Screenshots/SingleProject.png",
+      "targetPath": "Screenshots/SingleProject.png"
     },
-    "overview": "publish.overview.md",
-    "assetFiles": [
-        {
-            "pathOnDisk": "Screenshots/SingleProject.png",
-            "targetPath": "Screenshots/SingleProject.png"
-        },
-        {
-            "pathOnDisk": "Screenshots/MultipleProjects.png",
-            "targetPath": "Screenshots/MultipleProjects.png"
-        },
-        {
-            "pathOnDisk": "Screenshots/Solution.png",
-            "targetPath": "Screenshots/Solution.png"
-        }
-    ],
-    "priceCategory": "free",
-    "publisher": "Heku",
-    "private": false,
-    "qna": false,
-    "repo": "https://github.com/heku/kool.editproject"
+    {
+      "pathOnDisk": "Screenshots/MultipleProjects.png",
+      "targetPath": "Screenshots/MultipleProjects.png"
+    },
+    {
+      "pathOnDisk": "Screenshots/Solution.png",
+      "targetPath": "Screenshots/Solution.png"
+    },
+    {
+      "pathOnDisk": "Screenshots/Options.png",
+      "targetPath": "Screenshots/Options.png"
+    }
+  ],
+  "priceCategory": "free",
+  "publisher": "Heku",
+  "private": false,
+  "qna": false,
+  "repo": "https://github.com/heku/kool.editproject"
 }

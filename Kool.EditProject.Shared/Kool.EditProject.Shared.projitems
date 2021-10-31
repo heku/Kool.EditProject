@@ -4,6 +4,8 @@
     <MSBuildAllProjects Condition="'$(MSBuildVersion)' == '' Or '$(MSBuildVersion)' &lt; '16.0'">$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
     <HasSharedItems>true</HasSharedItems>
     <SharedGUID>6de6479d-ee05-43c9-a5f1-0bcc6b2998df</SharedGUID>
+    <UICulture>en</UICulture>
+    <LangVersion>latest</LangVersion>
   </PropertyGroup>
   <PropertyGroup Label="Configuration">
     <Import_RootNamespace>Kool.EditProject</Import_RootNamespace>
@@ -15,9 +17,18 @@
     <Compile Include="$(MSBuildThisFileDirectory)Commands\EditSolutionCommand.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)EditProjectPackage.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Ids.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\CustomEditor.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\FileEditorFactory.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\IFileEditor.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\ProjectHelper.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\ProjectKinds.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\TempFileHelper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\MessageBox.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\VsEditor.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\Options.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\OptionsPage.xaml.cs">
+      <DependentUpon>OptionsPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Properties\AssemblyInfo.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Vsix.cs" />
   </ItemGroup>
@@ -26,5 +37,11 @@
       <IncludeInVSIX>true</IncludeInVSIX>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="$(MSBuildThisFileDirectory)Pages\OptionsPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
 </Project>

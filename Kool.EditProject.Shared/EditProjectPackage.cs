@@ -1,5 +1,8 @@
-﻿using EnvDTE80;
+﻿using EnvDTE;
+using EnvDTE80;
 using Kool.EditProject.Commands;
+using Kool.EditProject.Pages;
+using Microsoft;
 using Microsoft.VisualStudio.Shell;
 using System;
 using System.ComponentModel.Design;
@@ -14,6 +17,7 @@ namespace Kool.EditProject
     [PackageRegistration(UseManagedResourcesOnly = true, AllowsBackgroundLoading = true)]
     [InstalledProductRegistration("#110", "#112", Vsix.VERSION, IconResourceID = 400)]
     [ProvideMenuResource("Menus.ctmenu", 1)]
+    [ProvideOptionPage(typeof(Options), Vsix.PRODUCT, Vsix.PACKAGE, 0, 0, true, Sort = 200)]
     [ProvideAutoLoad(Ids.AUTO_LOAD_CONTEXT, PackageAutoLoadFlags.BackgroundLoad)]
     [ProvideUIContextRule(Ids.AUTO_LOAD_CONTEXT,
         "HasProject",
@@ -23,20 +27,24 @@ namespace Kool.EditProject
         delay: 1000)]
     public sealed class EditProjectPackage : AsyncPackage
     {
-        internal DTE2 DTE { get; private set; }
+        internal static DTE2 VS { get; private set; }
+        internal static Options Options { get; private set; }
+        internal static EditProjectPackage Instance { get; private set; }
 
-        internal OleMenuCommandService CommandService { get; private set; }
-
-        protected override async Tasks.Task InitializeAsync(CancellationToken cancellationToken, IProgress<ServiceProgressData> progress)
+        protected override async Tasks.Task InitializeAsync(CancellationToken cancellationToken, IProgress<ServiceProgressData> _)
         {
-            DTE = await GetServiceAsync(typeof(EnvDTE.DTE)) as DTE2;
-            CommandService = await GetServiceAsync(typeof(IMenuCommandService)) as OleMenuCommandService;
+            Instance = this;
 
             await JoinableTaskFactory.SwitchToMainThreadAsync(cancellationToken);
 
-            EditProjectCommand.Initialize(this);
-            EditProjectsCommand.Initialize(this);
-            EditSolutionCommand.Initialize(this);
+            VS = await GetServiceAsync(typeof(DTE)) as DTE2;
+            Options = (Options)GetDialogPage(typeof(Options));
+
+            var cmds = await GetServiceAsync(typeof(IMenuCommandService)) as IMenuCommandService;
+            Assumes.Present(cmds);
+            cmds.AddCommand(EditProjectCommand.Instance);
+            cmds.AddCommand(EditProjectsCommand.Instance);
+            cmds.AddCommand(EditSolutionCommand.Instance);
         }
     }
 

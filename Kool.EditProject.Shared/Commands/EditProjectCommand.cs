@@ -5,18 +5,11 @@ namespace Kool.EditProject.Commands
 {
     internal sealed class EditProjectCommand : BaseCommand
     {
-        public static EditProjectCommand Instance { get; private set; }
-
-        public static void Initialize(EditProjectPackage package)
-        {
-            Instance = new EditProjectCommand(package);
-            package.CommandService.AddCommand(Instance);
-        }
+        public static EditProjectCommand Instance { get; } = new();
 
         private string _projectFile;
 
-        private EditProjectCommand(EditProjectPackage package)
-            : base(package, Ids.CMD_SET, Ids.EDIT_PROJECT_MENU_COMMAND_ID)
+        private EditProjectCommand() : base(Ids.EDIT_PROJECT_MENU_COMMAND_ID)
         {
         }
 
@@ -42,16 +35,6 @@ namespace Kool.EditProject.Commands
             }
         }
 
-        protected override void OnExecute()
-        {
-            if (IsEditing(_projectFile))
-            {
-                ActiveDocument(_projectFile);
-            }
-            else
-            {
-                OpenDocument(_projectFile);
-            }
-        }
+        protected override void OnExecute() => Open(_projectFile);
     }
 }
