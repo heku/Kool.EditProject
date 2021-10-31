@@ -1,7 +1,6 @@
 trigger:
 - 'master'
-- 'rel-2019'
-- 'rel-2022'
+- 'rel'
 
 variables:
   patch: $[counter('versioncounter', 0)]
