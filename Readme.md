@@ -1,11 +1,10 @@
 [![master branch](https://img.shields.io/azure-devops/build/heku/18bbd6e7-59f0-4bc9-a26a-1c9049793678/12/master?label=master)](https://dev.azure.com/heku/Kool.EditProject/_build/latest?definitionId=12&branchName=master)
+[![rel branch](https://img.shields.io/azure-devops/build/heku/18bbd6e7-59f0-4bc9-a26a-1c9049793678/12/rel?label=rel)](https://dev.azure.com/heku/Kool.EditProject/_build/latest?definitionId=12&branchName=rel)
 <br>
-[![rel-2019 branch](https://img.shields.io/azure-devops/build/heku/18bbd6e7-59f0-4bc9-a26a-1c9049793678/12/rel-2019?label=rel-2019)](https://dev.azure.com/heku/Kool.EditProject/_build/latest?definitionId=12&branchName=rel-2019)
 [![deployment 2019](https://vsrm.dev.azure.com/heku/_apis/public/Release/badge/18bbd6e7-59f0-4bc9-a26a-1c9049793678/1/2)](https://dev.azure.com/heku/Kool.EditProject/_dashboards/dashboard/b9294e57-7c09-45ee-9318-c4498b99c1c7)
 [![marketplace 2019](https://img.shields.io/visual-studio-marketplace/v/heku.editproject.svg?label=Marketplace)](https://marketplace.visualstudio.com/items?itemName=heku.EditProject)
 [![downloads 2019](https://img.shields.io/visual-studio-marketplace/d/heku.editproject.svg?label=Downloads)](https://marketplace.visualstudio.com/items?itemName=heku.EditProject)
 <br>
-[![rel-2019 branch](https://img.shields.io/azure-devops/build/heku/18bbd6e7-59f0-4bc9-a26a-1c9049793678/12/rel-2022?label=rel-2022)](https://dev.azure.com/heku/Kool.EditProject/_build/latest?definitionId=12&branchName=rel-2022)
 [![deployment 2022](https://vsrm.dev.azure.com/heku/_apis/public/Release/badge/18bbd6e7-59f0-4bc9-a26a-1c9049793678/1/4)](https://dev.azure.com/heku/Kool.EditProject/_dashboards/dashboard/b9294e57-7c09-45ee-9318-c4498b99c1c7)
 [![marketplace 2022](https://img.shields.io/visual-studio-marketplace/v/heku.editproject2022.svg?label=Marketplace)](https://marketplace.visualstudio.com/items?itemName=heku.EditProject2022)
 [![downloads 2022](https://img.shields.io/visual-studio-marketplace/d/heku.editproject2022.svg?label=Downloads)](https://marketplace.visualstudio.com/items?itemName=heku.EditProject2022)
