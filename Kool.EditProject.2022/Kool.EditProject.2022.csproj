@@ -48,20 +48,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup Label="Suppressed items">
-    <SuppressFromVsix Include="Microsoft.Bcl.AsyncInterfaces.dll" Visible="false" />
-    <SuppressFromVsix Include="Microsoft.NET.StringTools.dll" Visible="false" />
     <SuppressFromVsix Include="Microsoft.VisualStudio.TextTemplating.dll" Visible="false" />
     <SuppressFromVsix Include="Microsoft.VisualStudio.TextTemplating.Interfaces.dll" Visible="false" />
     <SuppressFromVsix Include="Microsoft.VisualStudio.TextTemplating.VSHost.dll" Visible="false" />
-    <SuppressFromVsix Include="Microsoft.VisualStudio.RpcContracts.dll" Visible="false" />
-    <SuppressFromVsix Include="System.Buffers.dll" Visible="false" />
-    <SuppressFromVsix Include="System.Configuration.ConfigurationManager.dll" Visible="false" />
-    <SuppressFromVsix Include="System.IO.Pipelines.dll" Visible="false" />
-    <SuppressFromVsix Include="System.Memory.dll" Visible="false" />
-    <SuppressFromVsix Include="System.Numerics.Vectors.dll" Visible="false" />
-    <SuppressFromVsix Include="System.Security.Permissions.dll" Visible="false" />
-    <SuppressFromVsix Include="System.Text.Encodings.Web.dll" Visible="false" />
-    <SuppressFromVsix Include="System.Text.Json.dll" Visible="false" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="..\Kool.EditProject.Linked\VSPackage.Designer.cs" Link="VSPackage.Designer.cs">
