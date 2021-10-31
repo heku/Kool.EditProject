@@ -1,4 +1,7 @@
-﻿namespace Kool.EditProject.Commands
+﻿using Kool.EditProject.Models;
+using System;
+
+namespace Kool.EditProject.Commands
 {
     internal sealed class EditProjectsCommand : BaseCommand
     {
@@ -10,9 +13,16 @@
 
         protected override void OnExecute()
         {
-            foreach (var project in SelectedProjects)
+            try
             {
-                Open(project.FullName);
+                foreach (var project in SelectedProjects)
+                {
+                    Open(project.FullName);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Error(VSPackage.ErrorMessageTitle, ex.Message);
             }
         }
     }

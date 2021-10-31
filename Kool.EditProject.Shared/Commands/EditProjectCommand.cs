@@ -1,4 +1,5 @@
 ﻿using Kool.EditProject.Models;
+using System;
 using System.Linq;
 
 namespace Kool.EditProject.Commands
@@ -35,6 +36,16 @@ namespace Kool.EditProject.Commands
             }
         }
 
-        protected override void OnExecute() => Open(_projectFile);
+        protected override void OnExecute()
+        {
+            try
+            {
+                Open(_projectFile);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Error(VSPackage.ErrorMessageTitle, ex.Message);
+            }
+        }
     }
 }

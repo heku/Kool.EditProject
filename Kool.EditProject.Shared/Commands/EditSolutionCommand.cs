@@ -1,4 +1,6 @@
-﻿using static Kool.EditProject.EditProjectPackage;
+﻿using Kool.EditProject.Models;
+using System;
+using static Kool.EditProject.EditProjectPackage;
 
 namespace Kool.EditProject.Commands
 {
@@ -14,6 +16,16 @@ namespace Kool.EditProject.Commands
 
         protected override void OnBeforeQueryStatus() => _solutionFile = VS.Solution.FullName;
 
-        protected override void OnExecute() => Open(_solutionFile);
+        protected override void OnExecute()
+        {
+            try
+            {
+                Open(_solutionFile);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Error(VSPackage.ErrorMessageTitle, ex.Message);
+            }
+        }
     }
 }
