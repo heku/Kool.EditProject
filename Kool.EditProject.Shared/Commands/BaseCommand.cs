@@ -33,7 +33,7 @@ namespace Kool.EditProject.Commands
         {
         }
 
-        protected IEnumerable<Project> SelectedProjects => VS.SelectedItems.OfType<SelectedItem>().Where(x => x.Project != null).Select(x => x.Project);
+        protected IEnumerable<Project> SelectedProjects => IDE.SelectedItems.OfType<SelectedItem>().Where(x => x.Project != null).Select(x => x.Project);
 
         protected virtual void OnBeforeQueryStatus()
         {

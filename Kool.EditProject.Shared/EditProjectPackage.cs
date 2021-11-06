@@ -27,7 +27,7 @@ namespace Kool.EditProject
         delay: 1000)]
     public sealed class EditProjectPackage : AsyncPackage
     {
-        internal static DTE2 VS { get; private set; }
+        internal static DTE2 IDE { get; private set; }
         internal static Options Options { get; private set; }
         internal static EditProjectPackage Instance { get; private set; }
 
@@ -37,7 +37,7 @@ namespace Kool.EditProject
 
             await JoinableTaskFactory.SwitchToMainThreadAsync(cancellationToken);
 
-            VS = await GetServiceAsync(typeof(DTE)) as DTE2;
+            IDE = await GetServiceAsync(typeof(DTE)) as DTE2;
             Options = (Options)GetDialogPage(typeof(Options));
 
             var cmds = await GetServiceAsync(typeof(IMenuCommandService)) as IMenuCommandService;

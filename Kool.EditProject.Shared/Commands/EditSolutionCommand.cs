@@ -14,7 +14,7 @@ namespace Kool.EditProject.Commands
         {
         }
 
-        protected override void OnBeforeQueryStatus() => _solutionFile = VS.Solution.FullName;
+        protected override void OnBeforeQueryStatus() => _solutionFile = IDE.Solution.FullName;
 
         protected override void OnExecute()
         {

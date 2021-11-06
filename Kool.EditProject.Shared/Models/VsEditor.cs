@@ -80,7 +80,7 @@ namespace Kool.EditProject.Models
         {
             var editingFile = FindEditingFile(projectFile);
 
-            foreach (Document document in VS.Documents)
+            foreach (Document document in IDE.Documents)
             {
                 if (document.FullName == editingFile)
                 {
@@ -93,7 +93,7 @@ namespace Kool.EditProject.Models
 
         private void RegisterListeners()
         {
-            _dteEvents = VS.Events;                         // Prevent it from GC.
+            _dteEvents = IDE.Events;                        // Prevent it from GC.
             _documentEvents = _dteEvents.DocumentEvents;    // Prevent it from GC.
             _documentEvents.DocumentSaved += DocumentEvents_DocumentSaved;
             _documentEvents.DocumentClosing += DocumentEvents_DocumentClosing;
