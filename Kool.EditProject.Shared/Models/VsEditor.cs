@@ -10,7 +10,7 @@ namespace Kool.EditProject.Models
     internal sealed class VsEditor : IFileEditor
     {
         // Editing File - Project File Watcher
-        private static readonly Dictionary<string, FileSystemWatcher> EditingFileMap = new Dictionary<string, FileSystemWatcher>();
+        private static readonly Dictionary<string, FileSystemWatcher> EditingFileMap = new();
 
         private static string GetWatchingFile(FileSystemWatcher watcher) => Path.Combine(watcher.Path, watcher.Filter);
         private static string FindEditingFile(string projectFile) => EditingFileMap.SingleOrDefault(x => GetWatchingFile(x.Value) == projectFile).Key;

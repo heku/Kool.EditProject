@@ -19,7 +19,7 @@ namespace Kool.EditProject.Models
         private readonly string _exe;
         private readonly string _arg;
 
-        private static readonly Dictionary<string, int> EditingFiles = new Dictionary<string, int>(StringComparer.OrdinalIgnoreCase);
+        private static readonly Dictionary<string, int> EditingFiles = new(StringComparer.OrdinalIgnoreCase);
 
         public CustomEditor(string exe, string arg)
         {
