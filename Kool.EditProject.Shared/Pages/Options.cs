@@ -1,6 +1,7 @@
 ﻿using Kool.EditProject.Models;
 using Microsoft.VisualStudio.Shell;
 using System;
+using System.ComponentModel;
 using System.Runtime.InteropServices;
 using UIElement = System.Windows.UIElement;
 
@@ -20,11 +21,22 @@ namespace Kool.EditProject.Pages
 
         protected override UIElement Child => _page ??= new OptionsPage(this);
 
+        protected override void OnActivate(CancelEventArgs e)
+        {
+            base.OnActivate(e);
+            _page?.UpdateDefaultStyle(); // Ensure VS Environment Font Settings are applied.
+        }
+
         protected override void OnApply(PageApplyEventArgs e)
         {
             FileEditorFactory.ClearCache();
-            _page?.UpdateDefaultStyle(); // Ensure VS Environment Font Settings are applied.
             base.OnApply(e);
+        }
+
+        protected override void OnClosed(EventArgs e)
+        {
+            base.OnClosed(e);
+            _page = null;
         }
 
         public override void ResetSettings()
