@@ -10,7 +10,9 @@ namespace Kool.EditProject.Models
         {
             return CachedEditor ??= CreateEditor();
 
+#pragma warning disable IDE1006 // Naming Styles
             static IFileEditor CreateEditor()
+#pragma warning restore IDE1006 // Naming Styles
             {
                 return Options.UseCustomEditor
                     ? new CustomEditor(Options.EditorExe, Options.EditorArg)
