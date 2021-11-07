@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Runtime.InteropServices;
+using static Kool.EditProject.EditProjectPackage;
 
 namespace Kool.EditProject.Models
 {
@@ -16,16 +17,7 @@ namespace Kool.EditProject.Models
         [DllImport("User32.dll")]
         private static extern bool IsIconic(IntPtr hWnd);
 
-        private readonly string _exe;
-        private readonly string _arg;
-
         private static readonly Dictionary<string, int> EditingFiles = new(StringComparer.OrdinalIgnoreCase);
-
-        public CustomEditor(string exe, string arg)
-        {
-            _exe = exe;
-            _arg = arg;
-        }
 
         public void OpenFile(string file)
         {
@@ -49,7 +41,7 @@ namespace Kool.EditProject.Models
                 var process = new Process
                 {
                     EnableRaisingEvents = true,
-                    StartInfo = new ProcessStartInfo(_exe, _arg.Replace("$FILE", file))
+                    StartInfo = new ProcessStartInfo(Options.EditorExe, Options.EditorArg.Replace("$FILE", file))
                 };
                 process.Exited += (_, _) => EditingFiles.Remove(file);
                 process.Start();

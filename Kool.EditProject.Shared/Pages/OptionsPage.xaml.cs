@@ -19,7 +19,6 @@ namespace Kool.EditProject.Pages
 
         private void OnBrowseButtonClicked(object sender, RoutedEventArgs e)
         {
-            // TODO: How to localize it?
             var dialog = new OpenFileDialog();
             if (!string.IsNullOrWhiteSpace(_options.EditorExe))
             {
@@ -41,7 +40,7 @@ namespace Kool.EditProject.Pages
             {
                 var file = Path.GetTempFileName();
                 File.WriteAllText(file, "Hello World");
-                new CustomEditor(_options.EditorExe, _options.EditorArg).OpenFile(file);
+                new CustomEditor().OpenFile(file);
             }
             catch (Exception ex)
             {
