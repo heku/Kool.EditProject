@@ -1,4 +1,5 @@
 ﻿using EnvDTE;
+using Microsoft;
 using Microsoft.VisualStudio.Shell;
 using Microsoft.VisualStudio.Shell.Interop;
 using System;
@@ -38,7 +39,7 @@ namespace Kool.EditProject.Models
         // https://www.mztools.com/articles/2014/MZ2014006.aspx
         private static bool IsCpsProject(IVsHierarchy hierarchy)
         {
-            Microsoft.Requires.NotNull(hierarchy, nameof(hierarchy));
+            Requires.NotNull(hierarchy, nameof(hierarchy));
             return hierarchy.IsCapabilityMatch("CPS");
         }
     }

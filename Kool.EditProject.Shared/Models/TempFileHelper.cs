@@ -1,4 +1,6 @@
-﻿using System.IO;
+﻿using System;
+using System.Diagnostics;
+using System.IO;
 
 namespace Kool.EditProject.Models
 {
@@ -19,8 +21,9 @@ namespace Kool.EditProject.Models
             {
                 Directory.Delete(Path.GetDirectoryName(file), true);
             }
-            catch
+            catch (Exception ex)
             {
+                Debug.WriteLine(ex.Message);
             }
         }
     }

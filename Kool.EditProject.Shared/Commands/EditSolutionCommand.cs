@@ -8,19 +8,15 @@ namespace Kool.EditProject.Commands
     {
         public static EditSolutionCommand Instance { get; } = new();
 
-        private string _solutionFile;
-
         private EditSolutionCommand() : base(Ids.EDIT_SOLUTION_MENU_COMMAND_ID)
         {
         }
-
-        protected override void OnBeforeQueryStatus() => _solutionFile = IDE.Solution.FullName;
 
         protected override void OnExecute()
         {
             try
             {
-                Open(_solutionFile);
+                Open(IDE.Solution.FullName);
             }
             catch (Exception ex)
             {
