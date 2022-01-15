@@ -1,7 +1,6 @@
-﻿namespace Kool.EditProject.Models
+﻿namespace Kool.EditProject.Models;
+
+internal interface IFileEditor
 {
-    internal interface IFileEditor
-    {
-        void OpenFile(string file);
-    }
+    void OpenFile(string file);
 }

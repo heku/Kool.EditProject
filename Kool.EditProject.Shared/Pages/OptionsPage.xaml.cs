@@ -5,47 +5,46 @@ using System.Windows;
 using System.Windows.Controls;
 using OpenFileDialog = Microsoft.Win32.OpenFileDialog;
 
-namespace Kool.EditProject.Pages
+namespace Kool.EditProject.Pages;
+
+internal sealed partial class OptionsPage : UserControl
 {
-    internal sealed partial class OptionsPage : UserControl
+    private readonly Options _options;
+
+    public OptionsPage(Options options)
     {
-        private readonly Options _options;
+        InitializeComponent();
+        DataContext = _options = options;
+    }
 
-        public OptionsPage(Options options)
+    private void OnBrowseButtonClicked(object sender, RoutedEventArgs e)
+    {
+        var dialog = new OpenFileDialog();
+        if (!string.IsNullOrWhiteSpace(_options.EditorExe))
         {
-            InitializeComponent();
-            DataContext = _options = options;
-        }
-
-        private void OnBrowseButtonClicked(object sender, RoutedEventArgs e)
-        {
-            var dialog = new OpenFileDialog();
-            if (!string.IsNullOrWhiteSpace(_options.EditorExe))
+            var dir = Path.GetDirectoryName(_options.EditorExe);
+            if (Directory.Exists(dir))
             {
-                var dir = Path.GetDirectoryName(_options.EditorExe);
-                if (Directory.Exists(dir))
-                {
-                    dialog.InitialDirectory = dir;
-                }
-            }
-            if (dialog.ShowDialog() is true)
-            {
-                EditorExe.Text = dialog.FileName;
+                dialog.InitialDirectory = dir;
             }
         }
-
-        private void OnTestButtonClicked(object sender, RoutedEventArgs e)
+        if (dialog.ShowDialog() is true)
         {
-            try
-            {
-                var file = Path.GetTempFileName();
-                File.WriteAllText(file, "Hello World");
-                new CustomEditor().OpenFile(file);
-            }
-            catch (Exception ex)
-            {
-                Models.MessageBox.Error(VSPackage.ErrorMessageTitle, ex.Message);
-            }
+            EditorExe.Text = dialog.FileName;
+        }
+    }
+
+    private void OnTestButtonClicked(object sender, RoutedEventArgs e)
+    {
+        try
+        {
+            var file = Path.GetTempFileName();
+            File.WriteAllText(file, "Hello World");
+            new CustomEditor().OpenFile(file);
+        }
+        catch (Exception ex)
+        {
+            Models.MessageBox.Error(VSPackage.ErrorMessageTitle, ex.Message);
         }
     }
 }
