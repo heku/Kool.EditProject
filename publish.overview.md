@@ -23,19 +23,15 @@ An open source Visual Studio extension to add the context menu for editing proje
 
 ## A known 'issue'
 
-Because the **Edit Project Files** menu works for all kinds of projects, include .NETCore projects which have the VS built-in Edit Project menu.
-If you edit a .NETCore project via this menu then edit it via the VS built-in menu (vice versa), then two edit windows will be opened.
+Because the **Edit Project Files** menu works for all kinds of projects, include .NETCore (SDK-style) projects which have a VS built-in Edit Project menu.
+If you edit a .NETCore project via this menu and edit it via the VS built-in menu (vice versa), then two edit windows will be opened.
 
 ## Thanks
 
 Thanks for every rating, I'm glad the tool is helpful to you,
 because of a [network issue](https://github.com/heku/Kool.VsDiff/issues/5),
-I cannot reply to you directly in the marketplace.
-
-## Welcome
-
-I'm not a native English speaker, so if you could correct any grammer mistake, it would be very appreciated.
+I may not be able to reply to you directly in the marketplace.
 
 ## Feedback
 
-If you have any question or problem, feel free to open an issue on [GitHub](https://github.com/heku/kool.editproject)
+If you have any question, feel free to open an issue on [GitHub](https://github.com/heku/kool.editproject).

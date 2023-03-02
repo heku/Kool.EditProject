@@ -37,13 +37,13 @@ You can install it via Visual Studio 2015/2017/2019/2022 'Extensions' or downloa
 
 ## A known 'issue'
 
-Because the **Edit Project Files** menu works for all kinds of projects, include .NETCore projects which have the VS built-in Edit Project menu.
-If you edit a .NETCore project via this menu then edit it via the VS built-in menu (vice versa), then two edit windows will be opened.
-
-## Welcome
-
-I'm not a native English speaker, so if you could correct any grammer mistake, it would be very appreciated.
+Because the **Edit Project Files** menu works for all kinds of projects, include .NETCore (SDK-style) projects which have a VS built-in Edit Project menu.
+If you edit a .NETCore project via this menu and edit it via the VS built-in menu (vice versa), then two edit windows will be opened.
 
 ## License
 
 - [MIT](LICENSE)
+
+----------------
+
+I'm not a native English speaker, and I would appreciate it if you could correct any of my English mistakes.
