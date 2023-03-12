@@ -1,7 +1,7 @@
 ﻿using Microsoft.VisualStudio;
 using Microsoft.VisualStudio.Shell;
 using Microsoft.VisualStudio.Shell.Interop;
-using static Kool.EditProject.EditProjectPackage;
+using static Kool.EditProject.Package;
 
 namespace Kool.EditProject.Models;
 

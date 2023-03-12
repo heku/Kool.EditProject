@@ -1,11 +1,8 @@
-[![dev](https://img.shields.io/azure-devops/build/heku/18bbd6e7-59f0-4bc9-a26a-1c9049793678/12/dev?label=dev)](https://dev.azure.com/heku/Kool.EditProject/_build/latest?definitionId=12&branchName=dev)
-[![rel](https://img.shields.io/azure-devops/build/heku/18bbd6e7-59f0-4bc9-a26a-1c9049793678/12/rel?label=rel)](https://dev.azure.com/heku/Kool.EditProject/_build/latest?definitionId=12&branchName=rel)
+[![Build Status](https://dev.azure.com/heku/vsix/_apis/build/status/heku.Kool.EditProject?branchName=main)](https://dev.azure.com/heku/vsix/_build/latest?definitionId=16&branchName=main)
 <br>
-[![2019 deployment](https://vsrm.dev.azure.com/heku/_apis/public/Release/badge/18bbd6e7-59f0-4bc9-a26a-1c9049793678/1/2)](https://dev.azure.com/heku/Kool.EditProject/_dashboards/dashboard/b9294e57-7c09-45ee-9318-c4498b99c1c7)
 [![2019 marketplace](https://img.shields.io/visual-studio-marketplace/v/heku.editproject.svg?label=2019-Marketplace)](https://marketplace.visualstudio.com/items?itemName=heku.EditProject)
 [![2019 downloads](https://img.shields.io/visual-studio-marketplace/d/heku.editproject.svg?label=2019-Downloads)](https://marketplace.visualstudio.com/items?itemName=heku.EditProject)
 <br>
-[![2022 deployment](https://vsrm.dev.azure.com/heku/_apis/public/Release/badge/18bbd6e7-59f0-4bc9-a26a-1c9049793678/1/4)](https://dev.azure.com/heku/Kool.EditProject/_dashboards/dashboard/b9294e57-7c09-45ee-9318-c4498b99c1c7)
 [![2022 marketplace](https://img.shields.io/visual-studio-marketplace/v/heku.editproject2022.svg?label=2022-Marketplace)](https://marketplace.visualstudio.com/items?itemName=heku.EditProject2022)
 [![2022 downloads](https://img.shields.io/visual-studio-marketplace/d/heku.editproject2022.svg?label=2022-Downloads)](https://marketplace.visualstudio.com/items?itemName=heku.EditProject2022)
 

@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using System.ComponentModel.Design;
 using System.IO;
 using System.Linq;
-using static Kool.EditProject.EditProjectPackage;
+using static Kool.EditProject.Package;
 
 namespace Kool.EditProject.Commands;
 

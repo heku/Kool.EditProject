@@ -3,7 +3,7 @@ using Microsoft.VisualStudio.Shell;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using static Kool.EditProject.EditProjectPackage;
+using static Kool.EditProject.Package;
 
 namespace Kool.EditProject.Models;
 

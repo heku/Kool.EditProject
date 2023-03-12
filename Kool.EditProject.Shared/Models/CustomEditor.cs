@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Runtime.InteropServices;
-using static Kool.EditProject.EditProjectPackage;
+using static Kool.EditProject.Package;
 
 namespace Kool.EditProject.Models;
 

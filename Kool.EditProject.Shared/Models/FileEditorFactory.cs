@@ -1,4 +1,4 @@
-﻿using static Kool.EditProject.EditProjectPackage;
+﻿using static Kool.EditProject.Package;
 
 namespace Kool.EditProject.Models;
 

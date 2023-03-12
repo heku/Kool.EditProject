@@ -65,7 +65,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="source.extension.vsixmanifest" />
-    <None Include="..\Kool.EditProject.Linked\EditProjectPackage.vsct" Link="EditProjectPackage.vsct" />
+    <None Include="..\Kool.EditProject.Linked\Menus.vsct" Link="Menus.vsct" />
     <None Include="..\Kool.EditProject.Linked\VSPackage.tt" Link="VSPackage.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>VSPackage.Designer.cs</LastGenOutput>
@@ -77,10 +77,10 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <VSCTCompile Include="..\Kool.EditProject.Linked\EditProjectPackage.en.vsct" Link="EditProjectPackage.en.vsct">
+    <VSCTCompile Include="..\Kool.EditProject.Linked\Menus.en.vsct" Link="Menus.en.vsct">
       <ResourceName>Menus.ctmenu</ResourceName>
     </VSCTCompile>
-    <VSCTCompile Include="..\Kool.EditProject.Linked\EditProjectPackage.zh-Hans.vsct" Link="EditProjectPackage.zh-Hans.vsct">
+    <VSCTCompile Include="..\Kool.EditProject.Linked\Menus.zh-Hans.vsct" Link="Menus.zh-Hans.vsct">
       <ResourceName>Menus.ctmenu</ResourceName>
     </VSCTCompile>
   </ItemGroup>

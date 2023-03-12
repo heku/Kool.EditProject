@@ -1,6 +1,6 @@
 ﻿using Kool.EditProject.Models;
 using System;
-using static Kool.EditProject.EditProjectPackage;
+using static Kool.EditProject.Package;
 
 namespace Kool.EditProject.Commands;
 
