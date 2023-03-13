@@ -34,7 +34,7 @@ public sealed partial class Package : AsyncPackage
     internal const string URL = "https://github.com/heku/kool.editproject";
 
     internal static DTE2 IDE { get; private set; }
-    internal IVsMonitorSelection Selection { get; private set; }
+    internal static IVsMonitorSelection Selection { get; private set; }
     internal static Options Options { get; private set; }
     internal static Package Instance { get; private set; }
 

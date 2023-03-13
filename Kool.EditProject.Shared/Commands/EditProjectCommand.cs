@@ -13,14 +13,14 @@ internal sealed class EditProjectCommand : BaseCommand
 
     private EditProjectCommand() : base(Ids.EDIT_PROJECT_MENU_COMMAND_ID)
     {
-        var result = Package.Instance.Selection.GetCmdUIContextCookie(Guid.Parse(Ids.EDIT_PROJECT_UI_CONTEXT), out _uiContextCookie);
+        var result = Package.Selection.GetCmdUIContextCookie(Guid.Parse(Ids.EDIT_PROJECT_UI_CONTEXT), out _uiContextCookie);
         ErrorHandler.ThrowOnFailure(result);
     }
 
     // After package loaded, the VisibilityConstraints way doesn't work anymore, we need to check it ourselves.
     private bool IsUIContextActive()
     {
-        var result = Package.Instance.Selection.IsCmdUIContextActive(_uiContextCookie, out var isActive);
+        var result = Package.Selection.IsCmdUIContextActive(_uiContextCookie, out var isActive);
         ErrorHandler.ThrowOnFailure(result);
         return isActive == 1;
     }
