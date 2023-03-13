@@ -20,8 +20,6 @@
     <Compile Include="$(MSBuildThisFileDirectory)Models\FileEditorFactory.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\IFileEditor.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\MessageBox.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Models\ProjectHelper.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Models\ProjectKinds.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\TempFileHelper.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\VsEditor.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Package.cs" />

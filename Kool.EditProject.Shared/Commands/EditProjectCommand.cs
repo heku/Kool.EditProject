@@ -1,4 +1,5 @@
 ﻿using Kool.EditProject.Models;
+using Microsoft.VisualStudio;
 using System;
 using System.Linq;
 
@@ -8,39 +9,32 @@ internal sealed class EditProjectCommand : BaseCommand
 {
     public static EditProjectCommand Instance { get; } = new();
 
-    private string _projectFile;
+    private readonly uint _uiContextCookie;
 
     private EditProjectCommand() : base(Ids.EDIT_PROJECT_MENU_COMMAND_ID)
     {
+        var result = Package.Instance.Selection.GetCmdUIContextCookie(Guid.Parse(Ids.EDIT_PROJECT_UI_CONTEXT), out _uiContextCookie);
+        ErrorHandler.ThrowOnFailure(result);
+    }
+
+    // After package loaded, the VisibilityConstraints way doesn't work anymore, we need to check it ourselves.
+    private bool IsUIContextActive()
+    {
+        var result = Package.Instance.Selection.IsCmdUIContextActive(_uiContextCookie, out var isActive);
+        ErrorHandler.ThrowOnFailure(result);
+        return isActive == 1;
     }
 
     protected override void OnBeforeQueryStatus()
     {
-        var projects = SelectedProjects.ToArray();
-        if (projects.Length == 1)
-        {
-            var project = projects[0];
-            if (ProjectHelper.IsDotNetCoreProject(project))
-            {
-                Visible = false;
-            }
-            else
-            {
-                _projectFile = project.FullName;
-                Visible = true;
-            }
-        }
-        else
-        {
-            Visible = false;
-        }
+        Visible = IsUIContextActive();
     }
 
     protected override void OnExecute()
     {
         try
         {
-            Open(_projectFile);
+            Open(SelectedProjects.Single().FullName); // must be single, right?
         }
         catch (Exception ex)
         {
