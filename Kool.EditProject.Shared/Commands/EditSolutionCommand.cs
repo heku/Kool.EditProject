@@ -20,7 +20,7 @@ internal sealed class EditSolutionCommand : BaseCommand
         }
         catch (Exception ex)
         {
-            MessageBox.Error(VSPackage.ErrorMessageTitle, ex.Message);
+            MessageBox.Error(I18n.ErrorMessageTitle, ex.Message);
         }
     }
 }

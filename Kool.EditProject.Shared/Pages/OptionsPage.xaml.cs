@@ -44,7 +44,7 @@ internal sealed partial class OptionsPage : UserControl
         }
         catch (Exception ex)
         {
-            Models.MessageBox.Error(VSPackage.ErrorMessageTitle, ex.Message);
+            Models.MessageBox.Error(I18n.ErrorMessageTitle, ex.Message);
         }
     }
 }
