@@ -5,14 +5,7 @@
     "Other"
   ],
   "identity": {
-    "internalName": "EditProject2022",
-    "displayName": "Edit Project",
-    "tags": [
-      "kool",
-      "edit",
-      "project",
-      "csproj"
-    ]
+    "internalName": "EditProject2022"
   },
   "overview": "publish.overview.md",
   "assetFiles": [
