@@ -15,7 +15,6 @@ namespace Kool.EditProject;
 
 [Guid(Ids.PACKAGE)]
 [PackageRegistration(UseManagedResourcesOnly = true, AllowsBackgroundLoading = true)]
-[InstalledProductRegistration("#110", "#112", VERSION, IconResourceID = 400)]
 [ProvideMenuResource("Menus.ctmenu", 1)]
 [ProvideOptionPage(typeof(Options), PRODUCT, NAME, 0, 0, true, Sort = 200)]
 // https://github.com/Microsoft/VSProjectSystem/blob/master/doc/overview/project_capabilities.md
