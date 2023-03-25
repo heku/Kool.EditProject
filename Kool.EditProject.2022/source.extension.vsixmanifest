@@ -6,7 +6,7 @@
     <Description xml:space="preserve">An open source Visual Studio extension to add the context menu for editing project/solution file.</Description>
     <MoreInfo>https://github.com/heku/kool.editproject</MoreInfo>
     <Icon>Resources\Logo.ico</Icon>
-    <Tags>kool;edit;project;csproj</Tags>
+    <Tags>kool;edit;project;csproj;何苦;编辑;项目</Tags>
   </Metadata>
   <Installation>
     <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[17.0,18.0)">
