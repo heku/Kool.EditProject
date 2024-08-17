@@ -7,11 +7,9 @@ namespace Kool.EditProject.Commands;
 
 internal sealed class EditProjectCommand : BaseCommand
 {
-    public static EditProjectCommand Instance { get; } = new();
-
     private readonly uint _uiContextCookie;
 
-    private EditProjectCommand() : base(Ids.EDIT_PROJECT_MENU_COMMAND_ID)
+    public EditProjectCommand() : base(Ids.EDIT_PROJECT_MENU_COMMAND_ID)
     {
         var result = Package.Selection.GetCmdUIContextCookie(Guid.Parse(Ids.EDIT_PROJECT_UI_CONTEXT), out _uiContextCookie);
         ErrorHandler.ThrowOnFailure(result);

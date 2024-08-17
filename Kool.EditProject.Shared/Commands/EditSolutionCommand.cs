@@ -6,9 +6,7 @@ namespace Kool.EditProject.Commands;
 
 internal sealed class EditSolutionCommand : BaseCommand
 {
-    public static EditSolutionCommand Instance { get; } = new();
-
-    private EditSolutionCommand() : base(Ids.EDIT_SOLUTION_MENU_COMMAND_ID)
+    public EditSolutionCommand() : base(Ids.EDIT_SOLUTION_MENU_COMMAND_ID)
     {
     }
 

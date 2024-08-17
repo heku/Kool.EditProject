@@ -49,8 +49,8 @@ public sealed partial class Package : AsyncPackage
 
         var cmds = await GetServiceAsync(typeof(IMenuCommandService)) as IMenuCommandService;
         Assumes.Present(cmds);
-        cmds.AddCommand(EditProjectCommand.Instance);
-        cmds.AddCommand(EditProjectsCommand.Instance);
-        cmds.AddCommand(EditSolutionCommand.Instance);
+        cmds.AddCommand(new EditProjectCommand());
+        cmds.AddCommand(new EditProjectsCommand());
+        cmds.AddCommand(new EditSolutionCommand());
     }
 }
