@@ -10,8 +10,8 @@
 
 An open source Visual Studio extension to add the context menu for editing project/solution file.
 
-You can install it via Visual Studio 2015/2017/2019/2022 'Extensions' or download it from
-- [Marketplace for VS2022](https://marketplace.visualstudio.com/items?itemName=heku.EditProject2022)
+You can install it via Visual Studio 2015/2017/2019/2022/2026 'Extensions' menu or download it from
+- [Marketplace for VS2022 and above](https://marketplace.visualstudio.com/items?itemName=heku.EditProject2022)
 - [Marketplace for VS2019 and below](https://marketplace.visualstudio.com/items?itemName=heku.EditProject)
 
 ## Features
